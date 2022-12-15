@@ -1569,7 +1569,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-21 20:11:21 +0000">11/21/2022</time>
+    <time datetime="2022-12-15 14:56:59 +0000">12/15/2022</time>
     
   
 
@@ -1583,9 +1583,11 @@
 <p>用于通过 REST API 访问资源实例或集合的 URL 的常规结构由多个值组成。此结构反映了底层对象模型和系统设计。</p>
 </div>
 <div class="paragraph">
+<div class="title">帐户作为 root</div>
 <p>指向每个 REST 端点的资源路径的根是 Astra 帐户。因此、URL中的所有路径都以开头 <code>/account/{account_id}</code> 其中： <code>account_id</code> 是帐户的唯一UUIDv4值。内部结构这反映了一种设计，其中所有资源访问都基于特定帐户。</p>
 </div>
 <div class="paragraph">
+<div class="title">端点资源类别</div>
 <p>Astra 资源端点分为三类：</p>
 </div>
 <div class="ulist">
@@ -1605,9 +1607,11 @@
 <p>请参见 <a href="../endpoints/resources.html">"Resources"</a> 有关详细信息 &#8230;&#8203;</p>
 </div>
 <div class="paragraph">
+<div class="title">类别版本</div>
 <p>这三个资源类别中的每一个都有一个全局版本，用于控制所访问资源的版本。根据约定和定义、移动到资源类别的新主要版本(例如 <code>/v1</code> to <code>/v2</code>)将在API中引入中断更改。</p>
 </div>
 <div class="paragraph">
+<div class="title">资源实例或集合</div>
 <p>根据是否访问资源实例或集合，可以在路径中使用资源类型和标识符的组合。</p>
 </div>
 <div class="ulist">

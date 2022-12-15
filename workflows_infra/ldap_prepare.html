@@ -1569,7 +1569,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-21 20:11:21 +0000">11/21/2022</time>
+    <time datetime="2022-12-15 14:56:59 +0000">12/15/2022</time>
     
   
 
@@ -1643,33 +1643,43 @@
 <p>在将Astra配置为使用LDAP进行身份验证之前、您应查看下面介绍的Astra配置要点、包括限制和配置选项。</p>
 </div>
 <div class="paragraph">
+<div class="title">仅支持Astra控制中心</div>
 <p>Astra Control平台提供了两种部署模式。只有Astra控制中心部署才支持LDAP身份验证。</p>
 </div>
 <div class="paragraph">
+<div class="title">仅限REST API配置</div>
 <p>当前版本的Astra控制中心仅支持使用Astra Control REST API配置LDAP身份验证。此限制的一个重要方面是、LDAP用户不会显示在Astra Web界面的"Users"选项卡中。它们可通过端点的REST API来访问 <code>../core/v1/users</code>。</p>
 </div>
 <div class="paragraph">
+<div class="title">需要LDAP服务器</div>
 <p>要接受和处理Astra身份验证请求、您必须具有LDAP服务器。当前版本的Astra控制中心支持Microsoft的Active Directory。</p>
 </div>
 <div class="paragraph">
+<div class="title">与LDAP服务器的安全连接</div>
 <p>在Astra中配置LDAP服务器时、您可以选择定义安全连接。在这种情况下、LDAPS协议需要证书。</p>
 </div>
 <div class="paragraph">
+<div class="title">配置用户或组</div>
 <p>您需要选择要使用LDAP进行身份验证的用户。为此、您可以确定各个用户或一组用户。必须在LDAP服务器上定义这些帐户。它们还需要在Astra (类型为LDAP)中进行标识、这样可以将身份验证请求转发到LDAP。</p>
 </div>
 <div class="paragraph">
+<div class="title">绑定用户或组时的角色限制</div>
 <p>在当前版本的Astra控制中心中、是唯一支持的值 <code>roleConstraint</code> 为"*"。这表示用户不受限于一组有限的命名空间、并且可以访问所有命名空间。请参见 <a href="../workflows_infra/wf_ldap_add_entries.html">"将LDAP条目添加到Astra"</a> 有关详细信息 &#8230;&#8203;</p>
 </div>
 <div class="paragraph">
+<div class="title">LDAP凭据</div>
 <p>LDAP使用的凭据包括用户名(电子邮件地址)和关联的密码。</p>
 </div>
 <div class="paragraph">
+<div class="title">唯一电子邮件地址</div>
 <p>在Astra控制中心部署中用作用户名的所有电子邮件地址都必须是唯一的。您不能添加电子邮件地址已定义为Astra的LDAP用户。如果存在重复的电子邮件、您需要先从Astra中将其删除。请参见 <a href="https://docs.netapp.com/us-en/astra-control-center/use/manage-users.html#remove-users" target="_blank" rel="noopener">"删除用户"</a> 有关详细信息、请访问Astra控制中心文档站点。</p>
 </div>
 <div class="paragraph">
+<div class="title">也可以先定义LDAP用户和组</div>
 <p>您可以将LDAP用户和组添加到Astra控制中心、即使它们尚未位于LDAP中或未配置LDAP服务器也是如此。这样、您可以在配置LDAP服务器之前预先配置用户和组。</p>
 </div>
 <div class="paragraph">
+<div class="title">在多个LDAP组中定义的用户</div>
 <p>如果某个LDAP用户属于多个LDAP组、并且在Astra中为这些组分配了不同的角色、则用户在进行身份验证时的有效角色将获得最大的特权。例如、如果为用户分配了 <code>viewer</code> 角色与group1具有、但具有 <code>member</code> 用户在group2中的角色 <code>member</code>。这基于Astra使用的层次结构(从高到低)：</p>
 </div>
 <div class="ulist">
@@ -1689,12 +1699,15 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">定期同步帐户</div>
 <p>Astra大约每60秒就会将其用户和组与LDAP服务器同步一次。因此、如果将用户或组添加到LDAP或从LDAP中删除、则可能需要长达一分钟的时间、才能在Astra中使用该用户或组。</p>
 </div>
 <div class="paragraph">
+<div class="title">禁用并重置LDAP配置</div>
 <p>在尝试重置LDAP配置之前、必须先禁用LDAP身份验证。此外、还可以更改LDAP服务器 (<code>connectionHost</code>)、则需要同时执行这两个操作。请参见 <a href="../workflows_infra/wf_ldap_disable_reset.html">"禁用并重置LDAP"</a> 有关详细信息 &#8230;&#8203;</p>
 </div>
 <div class="paragraph">
+<div class="title">REST API参数</div>
 <p>LDAP配置工作流会调用REST API来完成特定任务。每个API调用都可以包括输入参数、如提供的示例所示。请参见 <a href="../reference/api_reference.html">"API 参考"</a> 有关如何查找参考文档的信息。</p>
 </div>
 </div>

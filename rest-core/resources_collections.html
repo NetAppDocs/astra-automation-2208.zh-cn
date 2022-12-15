@@ -1569,7 +1569,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-21 20:11:21 +0000">11/21/2022</time>
+    <time datetime="2022-12-15 14:56:59 +0000">12/15/2022</time>
     
   
 
@@ -1605,6 +1605,7 @@
 <p>Astra Control REST API 符合 RESTful 设计原则。每个 Astra 资源实例都是根据定义明确的资源类型创建的。一组相同类型的资源实例称为 * 集合 * 。API 调用会对单个资源或资源集合执行操作。</p>
 </div>
 <div class="paragraph">
+<div class="title">资源类型</div>
 <p>Astra Control REST API 附带的资源类型具有以下特征：</p>
 </div>
 <div class="ulist">
@@ -1621,6 +1622,7 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">资源实例</div>
 <p>通过 Astra Control REST API 提供的资源实例具有以下特征：</p>
 </div>
 <div class="ulist">
@@ -1643,6 +1645,7 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">资源收集</div>
 <p>通过 Astra Control REST API 提供的资源收集具有以下特征：</p>
 </div>
 <div class="ulist">
@@ -1656,6 +1659,7 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">实例标识符</div>
 <p>创建每个资源实例时，系统都会为其分配一个标识符。此标识符是一个 128 位 UUIDv4 值。分配的 UUIDv4 值是全局唯一且不可变的。发出创建新实例的API调用后、将向中的调用方返回具有关联ID的URL <code>Location</code> HTTP响应的标题。在引用资源实例时，您可以提取此标识符并在后续调用中使用它。</p>
 </div>
 <div class="admonitionblock note">
@@ -1679,6 +1683,7 @@
 <p>每个 Astra Control 资源都使用一个通用结构进行定义。</p>
 </div>
 <div class="paragraph">
+<div class="title">通用数据</div>
 <p>每个 Astra 资源都包含下表所示的键值。</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
@@ -1712,6 +1717,7 @@
 </tbody>
 </table>
 <div class="paragraph">
+<div class="title">元数据对象</div>
 <p>每个 Astra 资源附带的元数据 JSON 对象包含下表所示的键值。</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
@@ -1745,6 +1751,7 @@
 </tbody>
 </table>
 <div class="paragraph">
+<div class="title">资源状态</div>
 <p>选定资源A <code>state</code> 用于编排生命周期过渡和控制访问的值。</p>
 </div>
 </div>

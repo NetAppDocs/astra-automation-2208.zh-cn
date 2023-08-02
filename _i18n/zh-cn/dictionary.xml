@@ -903,7 +903,6 @@
   <block id="cea5f66f37995fb196323018a31600fc" category="cell">包含新创建资源的完整 URL 。</block>
   <block id="6e2102ce7d7573c8b221194a86f7a48b" category="section-title">查询参数</block>
   <block id="7fec4843ebac2572cb7aba56b67d7ddb" category="inline-link-macro">使用收集</block>
-  <block id="b206801753ef0a6abfae5904e5c68a57" category="paragraph">以下查询参数可用于资源收集。请参见 <block ref="114f30b2f00431234237350f516a01cf" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
   <block id="ce73e1ed10f91fd167ae3d5803ce8dff" category="cell">查询参数</block>
   <block id="4d0d3b0c69167fef7204e14c4e946c15" category="cell">包含读取收集时应返回的字段。</block>
   <block id="c6960e489ca14167f9bd9ace657e6790" category="cell">指示读取收集时要返回的资源必须匹配的字段。</block>
@@ -916,7 +915,6 @@
   <block id="16bd6f56e0279353c2bf47e3b1d13c41" category="cell">指示是否应在元数据对象中返回资源总数。</block>
   <block id="2974f783f17d54a41f4040c8daa90545" category="section-title">HTTP status codes</block>
   <block id="175b29f6f8dd1aa8a166427b6bcd061c" category="paragraph">下面介绍了 Astra Control REST API 使用的 HTTP 状态代码。</block>
-  <block id="ef69df9e80d5e1591d22bfe189aa737e" category="admonition">Astra Control REST API 还使用 * HTTP APIs* 标准的问题详细信息。请参见 <block ref="d9c154af7dec160f41ead610ccb970e9" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
   <block id="ca0dbad92a874b2f69b549293387925e" category="cell">代码</block>
   <block id="7277de5f2ed6f17c61f1f25594591a82" category="cell">含义</block>
   <block id="3644a684f98ea8fe223c713b77189a77" category="cell">200</block>
@@ -1077,4 +1075,6 @@
   <block id="2808a34767e19b842d906ab8ab6264c6" category="paragraph-title">排序</block>
   <block id="cbb81506a7fe3ef03f7a89c76c52131a" category="paragraph-title">分页</block>
   <block id="e93f994f01c537c4e2f7d8528c3eb5e9" category="paragraph-title">计数</block>
+  <block id="c41fa1ca9e61ce922033f50c259cb7a3" category="paragraph">以下查询参数可用于资源收集。请参见 <block ref="69d3926f8a91301f2a5a5c3d61b27821" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
+  <block id="d9a8eedd670f58ed76d5ae881e6d4469" category="admonition">Astra Control REST API 还使用 * HTTP APIs* 标准的问题详细信息。请参见 <block ref="e560597744bc7b2711ae89c683c4035f" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
 </blocks>
